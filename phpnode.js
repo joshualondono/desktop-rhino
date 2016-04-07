@@ -18,11 +18,8 @@ portfinder.getPort(function(err, port) {
   } else {
     console.log(port);  var a = execFile('bin/nwjs', ['-S','localhost:' + port]); 
 
-
 process.on('exit', function () {
     a.kill();
-
-
 });
 
 }
@@ -44,17 +41,14 @@ portfinder.getPort(function(err, port) {
   } else {
     console.log(port); var a = exec('php -S localhost:' + port); 
 
-
 process.on('exit', function () {
     a.kill();
-
-
 });
 
 }
 });
 }
-exports.winserver = function () { const execFile = require('child_process').execFile; var fs = require("fs"); var portfinder = require('portfinder');
+exports.winserver = function () { 
 
 if(process.argv[2]) {
   var port = process.argv[2];
@@ -69,7 +63,6 @@ portfinder.getPort(function(err, port) {
     console.error(err);
   } else {
     console.log(port); const child = execFile('bin/php', ['-S','localhost:' + port]); 
-
 }
 });
 }

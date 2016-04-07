@@ -39,8 +39,8 @@ GETTING STARTED (PHP Version)
    If you are on Mac OSX edit the index.html fileand change server.serverup() to...
 
         
-         server.macinternal()  # for mac php pre-built 
-         server.macserver()    # for executable in bin folder
+     server.macinternal();  # for mac php pre-built 
+     server.macserver();    # for executable in bin folder
 
 
 Your are now ready to begin running PHP programs as ordinary desktop applications. 
@@ -56,15 +56,15 @@ Rhino utlizes 3 simple commands
 
 This starts a php server on windows from the bin folder.
 
-     server.winserver()
+     server.winserver();
 
 This starts a php server by accessing OSX's pre-packaged php executable.
 
-     server.macinternal()
+     server.macinternal();
 
 This starts a php server on OSX from the bin folder.
 
-     server.macserver() 
+     server.macserver(); 
 
 Change path or server
 

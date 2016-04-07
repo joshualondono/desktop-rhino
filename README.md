@@ -107,6 +107,7 @@ Mac OSX -  10.11 - x64,
 Bugs on...
 
 Mac OSX
+
 1)Currently child process does not end with killall command form terminal. This can be resolved by renaming php executable to the same   name as parent process, i.e., your app name. This is not resolvable when running pre-packaged php. 
 
 2)Single instance seems to remain in default despite be set to false. May be an issue with NW.js but currently investigating. 

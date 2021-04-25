@@ -1,6 +1,6 @@
 const execFile = require('child_process').execFile; 
 const exec = require('child_process').exec;
-var portfinder = require('portfinder');
+const portfinder = require('portfinder');
 
 exports.macserver = function () { 
 
